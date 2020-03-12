@@ -21,7 +21,7 @@ export default class MyApp extends App {
     const { Component, pageProps } = this.props;
 
     return (
-      <React.Fragment>
+      <>
         <Head>
           <title>Next.js Typescript Styled-Components</title>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -30,7 +30,7 @@ export default class MyApp extends App {
           <GlobalStyle />
           <Component {...pageProps} />
         </ThemeProvider>
-      </React.Fragment>
+      </>
     )
   }
 }
