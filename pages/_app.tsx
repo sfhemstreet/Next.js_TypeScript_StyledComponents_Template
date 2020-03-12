@@ -2,19 +2,12 @@ import React from "react";
 import App from "next/app";
 import Head from "next/head";
 import { ThemeProvider, createGlobalStyle } from "styled-components";
+import { AppTheme } from "../theme.ts";
 
-// Set up interface for theme for the entire app
-export interface ITheme {
-  
-}
+type MyTheme = typeof AppTheme;
 
 export interface IThemeWrapper {
-  theme: ITheme;
-}
-
-// Set up theme for the entire app 
-export const theme: ITheme = {
-  
+  theme: MyTheme;
 }
 
 const GlobalStyle = createGlobalStyle<IThemeWrapper>`
